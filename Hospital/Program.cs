@@ -6,7 +6,7 @@ namespace Hospital
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			ProgramService.Test();
 		}
 	}
 }
