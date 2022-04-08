@@ -156,6 +156,10 @@ namespace les1
 				{
 					quantity = @int.ToString().Length;
 				}
+				else if (data[index] is DateTime dateTime)
+				{
+					quantity = dateTime.ToString("dd/MM/yyyy").Length;
+				}
 				else
 				{
 					quantity = 0;
@@ -166,6 +170,10 @@ namespace les1
 				if (data[index] is int)
 				{
 					Message($"{data[index]}║");
+				}
+				else if (data[index] is DateTime dateTime)
+				{
+					Message($"{dateTime.ToString("dd/MM/yyyy"):f2}║");
 				}
 				else
 				{
