@@ -29,7 +29,7 @@ namespace Hospital
 
 				foreach (Patient patient in collectionPatiens.PatientsList)
 				{
-					table.Body(new object[] { patient.LastName, patient.DiagnosisPatient.Title, patient.DateOfReceipt, patient.ArrivalTime });
+					table.Body(new object[] { patient.LastName, patient.DiagnosisPatient.Title, patient.DateOfReceipt, patient.DurationOfStay });
 				}
 
 				table.Bottom();

@@ -44,7 +44,7 @@ namespace Hospital.Services
 				{
 					string[] word = line.Split(';');
 
-					collectionPatients.PatientsList.Add(new Patient(word[0], Convert.ToDateTime(word[1]), word[2], collection));
+					collectionPatients.PatientsList.Add(new Patient(word[0], Convert.ToDateTime(word[1]), Convert.ToDateTime(word[2]), word[3], collection));
 				}
 			}
 
